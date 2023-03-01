@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh tong so toi n</title>
+</head>
+<body>
+<label>nhap so</label>
+<input type="number" id="num" >
+<button type="button" id="but1">click</button>
+<h2>ket qua</h2>
+<p id="result"></p>
+<script>
+  let but=document.getElementById('but1');
+  but.addEventListener('click',tinhtong);
+  function tinhtong() {
+    let n= parseInt(document.getElementById('num').value);
+    let sum=0;
+    for ( i=0; i<=n ;i=i+1) {
+      sum=sum+i;
+
+    }  document.getElementById('result').innerHTML=sum;
+
+  }
+</script>
+</body>
+</html>
